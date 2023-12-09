@@ -1,11 +1,11 @@
-@import './base.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 #app {
-  min-width: 100vw;
-  height: 100vh;
   font-weight: normal;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  }
