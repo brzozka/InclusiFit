@@ -7,8 +7,8 @@
     <div><span class="text-4xl font-bold px-6 py-3">InclusiFit</span></div>
     
     <div class="text-3xl font-semibold px-7  ">
-      <span class="px-3 hover:text-violet-600">Map</span>
-      <span class="px-6 hover:text-violet-600">Exercises</span>
+      <span class="px-3 hover:text-[#655CFE]">Map</span>
+      <span class="px-6 hover:text-[#655CFE]">Exercises</span>
     </div>
   </nav>
 </header>
