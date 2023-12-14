@@ -1,6 +1,6 @@
 <template>
     <div class="flex h-fit flex-col w-full">
-      <div class="flex h-fit flex-col w-[70vw] font-sans mx-auto"><Navbar></Navbar></div>
+      <div class="flex h-fit flex-col w-[70vw] font-sans mx-auto"><NavBar></NavBar></div>
       
       <div class="flex h-[80vh] w-[70vw] mx-auto bg-white items-center justify-center">
         <HeroSection 
@@ -25,12 +25,12 @@
           btnText="Explore Exercises"
         />
         <div class="w-1/2 h-full flex flex-col justify-center items-center">
-      <img src="../assets/exercise.png" alt="People exercising" class="w-fit h-fit py-2 px-4 rounded-[50px]">
+      <img src="../assets/tailored.png" alt="People exercising" class="w-fit h-fit py-2 px-4 rounded-[50px]">
     </div>
       </div>
       <div class="flex h-[80vh] w-[70vw] mx-auto bg-white items-center justify-center">
         <div class="w-1/2 h-full flex flex-col justify-center items-center">
-      <img src="../assets/exercise.png" alt="People exercising" class="w-fit h-fit py-2 px-4 rounded-[50px]">
+      <img src="../assets/map.png" alt="People exercising" class="w-full h-full py-2 px-4 rounded-[50px]">
     </div>
         <HeroSection 
           title="Accessible Gym Locator in Your Vicinity"
@@ -45,7 +45,7 @@
   </template>
   
   <script setup>
-  import Navbar from '../components/Navbar.vue'
+  import NavBar from '../components/NavBar.vue'
   import HeroSection from '../components/HeroSection.vue'
   import FooterSection from '../components/FooterSection.vue'
   </script>
