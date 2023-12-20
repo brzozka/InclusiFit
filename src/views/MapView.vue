@@ -14,4 +14,29 @@
 
 <script setup>
 import NavBar from '../components/NavBar.vue'
+import L from 'leaflet';
+import { onMounted, onBeforeUnmount } from 'vue';
+
+let map;
+
+onMounted(() => {
+  map = L.map('map').setView([51.21006, 16.1619], 14);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+});
+
+onBeforeUnmount(() => {
+  if (map && map.remove) {
+    map.remove();
+  }
+});
 </script>
+
+<style>
+#map {
+  height: 600px; 
+}
+</style>
+
