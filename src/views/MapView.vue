@@ -1,8 +1,6 @@
 <template>
   <div class="relative w-full h-screen">
-    <div class="flex h-auto flex-col w-[70vw] font-sans mx-auto">
-      <NavBar></NavBar>
-    </div>
+    <div class="flex h-fit flex-col w-full lg:w-[70vw] font-sans mx-auto"><NavBar></NavBar></div>
     <div class="flex flex-col w-[70vw] mx-auto bg-white items-center justify-center flex-grow">
       <div class="flex flex-col text-3xl font-bold text-[#655CFE] py-20">
         Fitness Facilities and their Accessibility near You
@@ -13,7 +11,7 @@
 </template>
 
 <script setup>
-import NavBar from '../components/NavBar.vue'
+import NavBar from '../components/NavBarComponent.vue'
 import L from 'leaflet';
 import { onMounted, onBeforeUnmount, ref } from 'vue';
 import { fetchGyms } from '../services/firebaseService'; // Adjust the path as needed
@@ -36,6 +34,7 @@ onMounted(async () => {
       <h5 class="text-3xl text-center font-bold text-[#655CFE]">${gym.name}</h5>
       <p class="text-lg text-gray-700">${gym.address}</p>
       <p class="text-lg text-gray-600">${gym.accessibility_desc}</p>
+      <a href="${gym.website}" target="_blank" class="text-xl text-[#655CFE]">${gym.website}</a>
     </div>
   `;
 
