@@ -24,7 +24,7 @@ const toggleMenu = () => {
       <!-- Links for large screens -->
       <div class="hidden md:flex text-3xl font-semibold px-7">
         <router-link to="/Map" class="px-3 hover:text-[#655CFE]">Map</router-link>
-        <router-link to="/" class="px-6 hover:text-[#655CFE]">Exercises</router-link>
+        <router-link to="/Exercise" class="px-6 hover:text-[#655CFE]">Exercises</router-link>
       </div>
 
       
@@ -32,7 +32,7 @@ const toggleMenu = () => {
     <!-- Links for mobile, hidden by default -->
     <div class="top-full right-0 bg-white shadow-md p-3 md:hidden text-4xl" v-show="isMenuOpen">
         <router-link to="/Map" class="block  px-3 hover:text-[#655CFE]">Map</router-link>
-        <router-link to="/" class="block  px-3 py-4 hover:text-[#655CFE]">Exercises</router-link>
+        <router-link to="/Exercise" class="block  px-3 py-4 hover:text-[#655CFE]">Exercises</router-link>
       </div>
   </header>
 </template>

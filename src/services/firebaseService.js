@@ -20,5 +20,18 @@ const fetchGyms = async () => {
     return []
   }
 }
+const fetchExercises = async () => {
+  try {
+    const querySnapshot = await getDocs(collection(db, 'exercises'))
+    const exercises = []
+    querySnapshot.forEach((doc) => {
+      exercises.push(doc.data())
+    })
+    return exercises
+  } catch (error) {
+    console.error('Error fetching exercises: ', error)
+    return []
+  }
+}
 
-export { fetchGyms }
+export { fetchGyms, fetchExercises }

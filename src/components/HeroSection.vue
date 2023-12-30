@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { defineProps, computed, ref, onMounted, onUnmounted } from 'vue';
+import {  computed, ref, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps({
   title: String,

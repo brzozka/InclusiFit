@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full">
+  <main class="flex flex-col w-full">
     <NavBar/>
 
     <SectionLayout>
@@ -38,7 +38,7 @@
         isImageFirst
       />
     </SectionLayout>
-  </div>
+  </main>
 </template>
 
 <script setup>

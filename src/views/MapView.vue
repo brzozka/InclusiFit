@@ -1,13 +1,13 @@
 <template>
-  <div class="relative w-full h-screen">
+  <main class="relative w-full h-screen">
     <div class="flex h-fit flex-col w-full lg:w-[70vw] font-sans mx-auto"><NavBar></NavBar></div>
-    <div class="flex flex-col w-[70vw] mx-auto bg-white items-center justify-center flex-grow">
-      <div class="flex flex-col text-3xl font-bold text-[#655CFE] py-20">
+    <section aria-labelledby="map-title" class="flex flex-col w-[70vw] mx-auto bg-white items-center justify-center flex-grow">
+      <h2 id="map-title" class="flex flex-col text-3xl font-bold text-[#655CFE] py-20">
         Fitness Facilities and their Accessibility near You
-      </div>
-      <div id="map" class="w-full flex-grow"></div>
-    </div>
-  </div>
+      </h2>
+      <div role="application" id="map" class="w-full flex-grow"></div>
+    </section>
+  </main>
 </template>
 
 <script setup>
