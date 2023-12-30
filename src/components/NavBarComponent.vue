@@ -10,7 +10,7 @@ const toggleMenu = () => {
 
 <template>
   <header class="w-full md:w-[70vw] bg-white mx-auto">
-    <nav class="mx-auto flex justify-between items-center p-3">
+    <nav class="mx-auto flex justify-between items-center p-3" role="navigation">
       <router-link to="/" class="text-4xl font-bold md:px-6 py-3">InclusiFit</router-link>
       
       <div class="md:hidden">

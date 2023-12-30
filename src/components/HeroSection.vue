@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row w-full h-full justify-center items-center">
+  <section class="flex flex-col md:flex-row w-full h-full justify-center items-center">
     <img v-if="isImageFirstComputed" :src="imageSrc" :alt="altText" class="md:w-1/2 w-full h-1/2 md:h-full py-2 px-4 rounded-[50px] object-cover" />
 
     <div class="w-full md:w-1/2 h-full flex flex-col justify-center items-center">
@@ -9,7 +9,7 @@
     </div>
 
     <img v-if="!isImageFirstComputed" :src="imageSrc" :alt="altText" class="md:w-1/2 w-full h-1/2 md:h-fit py-2 px-4 rounded-[50px] object-cover" />
-  </div>
+  </section>
 </template>
 
 <script setup>
