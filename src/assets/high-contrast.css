@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .high-contrast {
+    --tw-bg-opacity: 1; /* Ensure full opacity for backgrounds */
+    --tw-text-opacity: 1; /* Ensure full opacity for text */
+    --tw-border-opacity: 1; /* Ensure full opacity for borders */
+    --tw-ring-opacity: 1; /* Ensure full opacity for focus rings */
+    
+    /* Define high contrast color overrides */
+    --tw-bg-color: #000; /* Black background */
+    --tw-text-color: #fff; /* White text */
+    --tw-border-color: #fff; /* White borders */
+    --tw-ring-color: #ffbf47; /* Yellow focus ring for visibility */
+  }
+
+  /* Apply high contrast styles */
+  .high-contrast .bg-primary {
+    @apply bg-black;
+  }
+
+  .high-contrast .text-primary {
+    @apply text-white;
+  }
+
+  .high-contrast .text-yellow {
+    @apply text-yellow-300;
+  }
+  .high-contrast .hover-yellow {
+    @apply hover:text-yellow-300;
+  }
+  .high-contrast .bg-yellow {
+    @apply bg-yellow-400;
+
+  }
+  .high-contrast .hover-bg-yellow {
+    @apply hover:bg-yellow-500;
+  }     
+  .high-contrast .text-b{
+    @apply text-black;
+  
+  }
+  .high-contrast .border-yellow {
+    @apply border-yellow-400;
+  }
+  .high-contrast .border-primary {
+    @apply border-white;
+  }
+
+  .high-contrast .focus\:ring-primary:focus {
+    @apply ring-2 ring-offset-2 ring-yellow-500;
+  }
+}

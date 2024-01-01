@@ -1,8 +1,8 @@
 <template>
-  <main class="flex flex-col w-full">
+  <main class="flex flex-col w-full text-primary bg-primary border-primary">
     <NavBar/>
 
-    <SectionLayout>
+    <SectionLayout >
       <HeroSection 
         title="Inclusive Fitness for Diverse Abilities"
         description="Unleashing fitness resources for people with diverse needs, offering tailored exercises and mapping accessible gyms."

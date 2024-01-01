@@ -1,4 +1,5 @@
 import './assets/main.css'
+import './assets/high-contrast.css'
 import 'leaflet/dist/leaflet.css'
 
 import { createApp } from 'vue'
