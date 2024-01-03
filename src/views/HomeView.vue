@@ -7,6 +7,7 @@
         title="Inclusive Fitness for Diverse Abilities"
         description="Unleashing fitness resources for people with diverse needs, offering tailored exercises and mapping accessible gyms."
         btnText="Get Started"
+        buttonRoute="/Exercise"
         image="exercise.png"  
         altText="Group fitness class"
       />
@@ -23,6 +24,7 @@
         title="Tailored Exercises Suited to Specific Disabilities"
         description="We provide exercises adapted to suit specific disabilities, enabling users to pursue their fitness journey with ease."
         btnText="Explore Exercises"
+        buttonRoute="/Exercise"
         image="tailored.png"  
         altText="Tailored exercises for disabilities"
       />
@@ -33,6 +35,7 @@
         title="Accessible Gym Locator in Your Vicinity"
         description="Locate gyms nearby that prioritize accessibility, making it easier for you to continue your fitness journey."
         btnText="Find Gyms"
+        buttonRoute="/Map"
         image="map.png" 
         altText="Map showing gym locations"
         isImageFirst
