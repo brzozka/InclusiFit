@@ -14,7 +14,7 @@
 import NavBar from '../components/NavBarComponent.vue'
 import L from 'leaflet';
 import { onMounted, onBeforeUnmount, ref } from 'vue';
-import { fetchGyms } from '../services/firebaseService'; // Adjust the path as needed
+import { fetchGyms } from '../services/firebaseService'; 
 
 const map = ref(null);
 const gyms = ref([]);
