@@ -32,6 +32,12 @@ npm run build
 npm run lint
 ```
 
+### Run Prettier formatter
+
+```sh
+npm run format
+```
+
 ### Run test
 
 ```sh

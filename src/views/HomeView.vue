@@ -1,14 +1,14 @@
 <template>
   <main class="flex flex-col w-full text-primary bg-primary border-primary">
-    <NavBar/>
+    <NavBar />
 
-    <SectionLayout >
-      <HeroSection 
+    <SectionLayout>
+      <HeroSection
         title="Inclusive Fitness for Diverse Abilities"
         description="Unleashing fitness resources for people with diverse needs, offering tailored exercises and mapping accessible gyms."
         btnText="Get Started"
         buttonRoute="/Exercise"
-        :image="exerciseImage"  
+        :image="exerciseImage"
         altText="Group fitness class"
       />
     </SectionLayout>
@@ -20,23 +20,23 @@
     />
 
     <SectionLayout>
-      <HeroSection 
+      <HeroSection
         title="Tailored Exercises Suited to Specific Disabilities"
         description="We provide exercises adapted to suit specific disabilities, enabling users to pursue their fitness journey with ease."
         btnText="Explore Exercises"
         buttonRoute="/Exercise"
-        :image="tailoredImage"  
+        :image="tailoredImage"
         altText="Tailored exercises for disabilities"
       />
     </SectionLayout>
 
     <SectionLayout>
-      <HeroSection 
+      <HeroSection
         title="Accessible Gym Locator in Your Vicinity"
         description="Locate gyms nearby that prioritize accessibility, making it easier for you to continue your fitness journey."
         btnText="Find Gyms"
         buttonRoute="/Map"
-        :image="mapImage" 
+        :image="mapImage"
         altText="Map showing gym locations"
         isImageFirst
       />
@@ -49,7 +49,7 @@ import NavBar from '../components/NavBarComponent.vue'
 import HeroSection from '../components/HeroSection.vue'
 import FullBarSection from '../components/FullBarSection.vue'
 import SectionLayout from '../components/SectionLayout.vue'
-import exerciseImage from '@/assets/exercise.png';
-import tailoredImage from '@/assets/tailored.png';
-import mapImage from '@/assets/map.png';
+import exerciseImage from '@/assets/exercise.png'
+import tailoredImage from '@/assets/tailored.png'
+import mapImage from '@/assets/map.png'
 </script>
