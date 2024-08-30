@@ -1,22 +1,16 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyAVuZkfUV1CH0JvPkL3nBigkZaKDQugVo4',
-  authDomain: 'inclusifit-a3dc4.firebaseapp.com',
-  projectId: 'inclusifit-a3dc4',
-  storageBucket: 'inclusifit-a3dc4.appspot.com',
-  messagingSenderId: '873723684960',
-  appId: '1:873723684960:web:2a35d78f5b5a37d973fb05',
-  measurementId: 'G-8Y87NVGTH0'
+  apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_APP_FIREBASE_MEASUREMENT_ID
 }
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
 
